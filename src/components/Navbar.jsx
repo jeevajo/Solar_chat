@@ -14,7 +14,7 @@ export default function Navbar() {
           <Link className="text-gray-700 hover:text-kyarrBlue" to="/">Home</Link>
           <Link className="text-gray-700 hover:text-kyarrBlue" to="/products">Products</Link>
           <Link className="text-gray-700 hover:text-kyarrBlue" to="/about">About</Link>
-          <Link className="px-3 py-2 bg-kyarrBlue text-white rounded" to="/contact">Contact</Link>
+          <Link className="px-3 py-2 bg-kyarrBlue text-white rounded" to="/contact">Contact Us</Link>
         </nav>
       </div>
     </header>
