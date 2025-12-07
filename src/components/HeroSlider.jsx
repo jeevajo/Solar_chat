@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const slides = [
-  { id: 1, image: '/images/product-hero-slider-1.png', title: 'KYARR INCORP', subtitle: 'The Royal Power Of A New Era' },
-  { id: 2, image: '/images/product-hero-slider-2.png', title: 'Advanced LiFePO4 Batteries', subtitle: 'Long-lasting backup for 2 nights' },
-  { id: 3, image: '/images/product-hero-slider-3.png', title: 'Robust Solar Panels', subtitle: 'High-efficiency panels for Indian roofs' },
-  { id: 4, image: '/images/product-hero-slider-4.png', title: 'All-in-One Solutions', subtitle: 'Street lights, hybrid systems & installations' },
-  { id: 5, image: '/images/product-hero-slider-5.png', title: '3 Year Warranty', subtitle: 'Reliable service & support' },
+  { id: 1, image: '/images/product-hero-slider-1.jpg', title: 'KYARR INCORP', subtitle: 'The Royal Power Of A New Era' },
+  { id: 2, image: '/images/product-hero-slider-2.jpg', title: 'Advanced LiFePO4 Batteries', subtitle: 'Long-lasting backup for 2 nights' },
+  { id: 3, image: '/images/product-hero-slider-3.jpg', title: 'Robust Solar Panels', subtitle: 'High-efficiency panels for Indian roofs' },
+  { id: 4, image: '/images/product-hero-slider-4.jpg', title: 'All-in-One Solutions', subtitle: 'Street lights, hybrid systems & installations' },
+  { id: 5, image: '/images/product-hero-slider-5.jpg', title: '3 Year Warranty', subtitle: 'Reliable service & support' },
 ]
 
 export default function HeroSlider(){
