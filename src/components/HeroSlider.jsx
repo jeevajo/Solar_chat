@@ -32,7 +32,6 @@ export default function HeroSlider(){
               <h2 className="text-3xl md:text-5xl font-extrabold">{s.title}</h2>
               <p className="mt-3 text-sm md:text-lg">{s.subtitle}</p>
               <div className="mt-6 flex gap-3">
-                <a href="tel:+919944261439" className="px-4 py-2 bg-kyarrBlue text-white rounded shadow">Call Now</a>
                 <Link to="/products" className="px-4 py-2 bg-white text-kyarrBlue rounded shadow">Explore Products</Link>
               </div>
             </div>
