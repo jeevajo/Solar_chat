@@ -18,11 +18,30 @@ export default function ProductDetail() {
             <li><strong>Backup:</strong> {p.backup}</li>
             <li><strong>Warranty:</strong> {p.warranty} (Service: {p.serviceWarranty})</li>
           </ul>
-          <div className="mt-6">
-            <button className="px-5 py-2 bg-kyarrBlue text-white rounded">Request Quote</button>
-            <a href="/contact" className="ml-3 text-gray-700">Contact Sales</a>
+          <div className="mt-6 flex gap-4">
+  <button
+    type="button"
+    onClick={() => {
+      const message = `Hello, I would like to request a quote for: ${p.title}`;
+      const url = `https://wa.me/917904294362?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }}
+    className="px-5 py-2 bg-green-600 hover:bg-green-700 text-white rounded"
+  >
+    Request Quote
+  </button>
 
-          </div>
+  <button
+    type="button"
+    onClick={() => {
+      window.location.href = "/contact";
+    }}
+    className="px-5 py-2 border border-gray-400 text-gray-700 rounded hover:bg-gray-100"
+  >
+    Contact Sale
+  </button>
+</div>
+
         </div>
       </div>
     </div>
