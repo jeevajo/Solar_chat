@@ -16,18 +16,8 @@ export default function Products() {
               <p className="text-sm text-gray-600 mt-1">{p.panel} • {p.battery}</p>
               <div className="mt-4 flex justify-between items-center">
                 <Link to={`/products/${p.id}`} className="text-kyarrBlue font-semibold">View details</Link>
-                <button
-  onClick={() => {
-    const message = `Hello, I want to enquire about: ${product.name}`;
-    window.open(
-      `https://wa.me/917904294362?text=${encodeURIComponent(message)}`,
-      "_blank"
-    );
-  }}
-  className="bg-green-500 text-white px-4 py-2 rounded"
->
-  Enquire
-</button>
+                <button ...>Enquire</button>
+
 
               </div>
             </div>
