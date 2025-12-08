@@ -4,7 +4,7 @@ export default function Navbar() {
     <header className="bg-white shadow fixed w-full z-40">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo.jpg" alt="KYARR" className="h-10"/>
+          <img src="/images/logo.jpg" alt="KYARR" className="h-14 w-auto object-contain"/>
           <div>
             <div className="text-xl font-bold text-kyarrBlue">KYARR INCORP</div>
             <div className="text-xs text-gray-500">The Royal Power Of A New Era</div>
