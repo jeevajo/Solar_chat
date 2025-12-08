@@ -30,6 +30,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="py-20 px-6 md:px-20 bg-gray-50">
+  <h2 className="text-3xl font-bold text-center mb-6">About KYARR INCORP</h2>
+  <p className="text-center max-w-4xl mx-auto text-gray-700 leading-7">
+    Established in 2011, Kyarr Incorp is a trusted manufacturer and service provider in solar energy
+    and lighting solutions. We specialize in solar street lights, panels, lithium battery packs,
+    LED lights, and government project execution with installation and maintenance.
+  </p>
+</section>
+
     </div>
   )
 }
