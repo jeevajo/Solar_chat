@@ -20,12 +20,12 @@ export default function Products() {
   type="button"
   onClick={() => {
     const message = `Hello, I want to enquire about: ${p.title}`;
-    const url = `https://wa.me/917904294362?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/919944261439?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   }}
   className="px-3 py-1 bg-green-600 hover:bg-green-700 text-white rounded text-sm"
 >
-  Enquir
+  Enquire
 </button>
 
 
