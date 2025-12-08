@@ -1,7 +1,8 @@
-import { useParams } from 'react-router-dom'
+import { useParams,useNavigate  } from 'react-router-dom'
 import products from '../data/products'
 
 export default function ProductDetail() {
+    const navigate = useNavigate()
   const { id } = useParams()
   const p = products.find(x => x.id === id)
   if (!p) return <div className="pt-24 p-6">Product not found</div>
@@ -33,14 +34,13 @@ export default function ProductDetail() {
 
   <button
     type="button"
-    onClick={() => {
-      window.location.href = "/contact";
-    }}
+    onClick={() => navigate('/contact')}
     className="px-5 py-2 border border-gray-400 text-gray-700 rounded hover:bg-gray-100"
   >
-    Contact Sale
+    Contact Sales
   </button>
 </div>
+
 
         </div>
       </div>
