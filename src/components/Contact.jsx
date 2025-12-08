@@ -7,7 +7,7 @@ export default function Contact() {
         <p><b>📞 Phone:</b> <a href="tel:+919944261439" className="text-kyarrBlue">+91 9944261439</a></p>
         <p><b>💬 WhatsApp:</b> <a href="https://wa.me/919944261439" className="text-kyarrBlue">+91 9944261439</a></p>
         <p><b>📧 Email:</b> <a href="mailto:orcqind@gmail.com" className="text-kyarrBlue">kyarrincorp@gmail.com</a></p>
-        <p><b>📍 Location:</b> Coimbatore</p>
+        <p><b>📍 Location:</b>  236, Rathna Nagar, Bharma Colony, Dindigul</p>
       </div>
     </div>
   );
