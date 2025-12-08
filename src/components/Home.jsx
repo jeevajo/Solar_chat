@@ -1,9 +1,12 @@
 import HeroSlider from './HeroSlider'
+import WhatsAppButton from './WhatsAppButton'
+
 
 export default function Home() {
   return (
     <div className="pt-24">
       <HeroSlider />
+      <WhatsAppButton />
 
       <section className="py-12">
         <div className="max-w-6xl mx-auto px-6">
