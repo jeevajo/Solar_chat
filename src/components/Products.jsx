@@ -16,7 +16,7 @@ export default function Products() {
               <p className="text-sm text-gray-600 mt-1">{p.panel} • {p.battery}</p>
               <div className="mt-4 flex justify-between items-center">
                 <Link to={`/products/${p.id}`} className="text-kyarrBlue font-semibold">View details</Link>
-                <button ...>Enquire</button>
+                <button ...>Enquir</button>
 
 
               </div>
