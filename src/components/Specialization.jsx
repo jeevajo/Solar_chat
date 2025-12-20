@@ -253,22 +253,49 @@ export default function Specialization() {
 
         {/* Desktop Tabs */}
         <div className="hidden md:block">
-          <div className="flex gap-3 overflow-x-auto mb-8">
-            {sections.map(sec => (
-              <button
-                key={sec.key}
-                onClick={() => setActiveTab(sec.key)}
-                className={`px-4 py-2 whitespace-nowrap rounded-full border transition
-                  ${
-                    activeTab === sec.key
-                      ? 'bg-kyarrBlue text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-100'
-                  }`}
-              >
-                {sec.title}
-              </button>
-            ))}
-          </div>
+         <div className="hidden md:flex items-center gap-2 mb-8">
+  
+  {/* Left Arrow */}
+  <button
+    onClick={scrollLeft}
+    className="p-2 rounded-full border hover:bg-gray-100"
+    aria-label="Scroll left"
+  >
+    ◀
+  </button>
+
+  {/* Tabs */}
+  <div
+    ref={tabScrollRef}
+    className="flex gap-3 overflow-x-auto scrollbar-hide"
+  >
+    {sections.map(sec => (
+      <button
+        key={sec.key}
+        onClick={() => setActiveTab(sec.key)}
+        className={`px-4 py-2 whitespace-nowrap rounded-full border transition
+          ${
+            activeTab === sec.key
+              ? 'bg-kyarrBlue text-white'
+              : 'bg-white text-gray-700 hover:bg-gray-100'
+          }`}
+      >
+        {sec.title}
+      </button>
+    ))}
+  </div>
+
+  {/* Right Arrow */}
+  <button
+    onClick={scrollRight}
+    className="p-2 rounded-full border hover:bg-gray-100"
+    aria-label="Scroll right"
+  >
+    ▶
+  </button>
+
+</div>
+
 
           <div className="bg-white rounded-xl shadow p-6 leading-7 text-gray-700">
             <h2 className="text-2xl font-semibold mb-4">
