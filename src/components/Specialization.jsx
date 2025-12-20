@@ -1,29 +1,30 @@
 import { useState } from 'react'
 
-const tabs = [
+const sections = [
   {
     key: 'solar-panels',
-    title: 'Solar Panels',
+    title: 'Solar Panels (Mono PERC)',
     content: (
       <>
         <p>
           Our company supplies and installs high-quality <strong>Monocrystalline Solar Panels</strong>
-          with advanced <strong>Mono PERC technology</strong> for solar street lights, high mast lights,
-          and solar CCTV systems. These panels deliver high efficiency, stable performance, and long-term
-          reliability in all weather conditions.
+          with advanced <strong>Mono PERC (Passivated Emitter and Rear Cell)</strong> technology for
+          solar street lights, high mast lights, and solar CCTV systems. These panels are carefully
+          selected to deliver high efficiency, stable performance, and long-term reliability in all
+          weather conditions.
         </p>
 
         <p className="mt-3">
-          Mono PERC technology improves light absorption and electrical performance, ensuring maximum
-          power generation even under low sunlight and high temperature conditions.
+          Mono PERC technology enhances light absorption and improves electrical performance, ensuring
+          maximum power generation even under low sunlight and high temperature conditions.
         </p>
 
         <h4 className="font-semibold mt-4">Technical Features & Specifications</h4>
         <ul className="list-disc ml-6 mt-2 space-y-1">
           <li>Mono PERC cell technology for higher power output</li>
-          <li>High efficiency and superior energy conversion</li>
-          <li>High open circuit voltage (Voc)</li>
-          <li>Optimized operating voltage</li>
+          <li>High efficiency panels with superior energy conversion</li>
+          <li>High open circuit voltage (Voc) for system stability</li>
+          <li>Optimized operating (closed circuit) voltage</li>
           <li>Low temperature coefficient</li>
           <li>Low degradation rate</li>
           <li>Expected lifespan: 25+ years</li>
@@ -31,8 +32,8 @@ const tabs = [
 
         <h4 className="font-semibold mt-4">Why We Use Monocrystalline Panels</h4>
         <ul className="list-disc ml-6 mt-2 space-y-1">
-          <li>Reliable power for night-long lighting</li>
-          <li>Ideal for government & highway projects</li>
+          <li>Reliable power for night-long lighting operation</li>
+          <li>Ideal for government, highway, and industrial projects</li>
           <li>High durability with low maintenance</li>
         </ul>
       </>
@@ -41,26 +42,35 @@ const tabs = [
 
   {
     key: 'controller',
-    title: 'Solar Charge Controller',
+    title: 'Solar Charge Controller (MPPT / PWM)',
     content: (
       <>
         <p>
-          We supply advanced <strong>MPPT & PWM solar charge controllers</strong> that manage charging,
-          discharging, and lighting control automatically.
+          Our company supplies and installs advanced <strong>MPPT and PWM solar charge controllers</strong>
+          that manage the complete operation of solar lighting systems. The controller plays a critical
+          role in charging the battery, controlling discharge, and ensuring stable power to LED luminaires.
         </p>
 
         <h4 className="font-semibold mt-4">Advanced Features</h4>
         <ul className="list-disc ml-6 mt-2 space-y-1">
-          <li>MPPT technology delivers 20–30% higher energy output</li>
-          <li>Dusk-to-dawn automatic ON / OFF</li>
-          <li>Battery overcharge & over-discharge protection</li>
+          <li>MPPT & PWM technology for efficient energy management</li>
+          <li>Perfect battery charging control (prevents overcharging)</li>
+          <li>Efficient discharge control for continuous night lighting</li>
+          <li>Automatic dusk-to-dawn ON / OFF</li>
           <li>Automatic voltage & wattage control</li>
           <li>Advanced dimming configuration</li>
         </ul>
 
+        <h4 className="font-semibold mt-4">What is MPPT?</h4>
+        <p>
+          MPPT (Maximum Power Point Tracking) continuously tracks the optimal voltage of the solar panel
+          and converts it efficiently to the required battery voltage, delivering
+          <strong> 20–30% higher energy output</strong> compared to PWM controllers.
+        </p>
+
         <p className="mt-3 italic">
-          Our MPPT controller intelligently adapts to battery health and environmental
-          conditions to ensure uninterrupted lighting throughout the night.
+          Our controller intelligently analyzes battery health and site conditions and adjusts lighting
+          output to ensure uninterrupted operation throughout the night.
         </p>
       </>
     )
@@ -72,20 +82,24 @@ const tabs = [
     content: (
       <>
         <p>
-          We use high-quality <strong>LiFePO4 lithium batteries</strong> for solar lighting systems,
-          ensuring long life, safety, and reliable performance.
+          We supply and install high-quality <strong>LiFePO4 (Lithium Iron Phosphate) batteries</strong>
+          for solar street lights, high mast lights, and solar CCTV systems. These batteries are known
+          for excellent safety, stability, and long service life.
         </p>
 
+        <h4 className="font-semibold mt-4">Key Features & Benefits</h4>
         <ul className="list-disc ml-6 mt-2 space-y-1">
           <li>3,000–5,000+ charge/discharge cycles</li>
+          <li>5–10+ years lifespan in daily solar use</li>
           <li>80–100% usable depth of discharge</li>
-          <li>Built-in BMS protection</li>
           <li>High efficiency (90–98%)</li>
-          <li>Low self-discharge</li>
+          <li>Low self-discharge (2–3% per month)</li>
+          <li>Wide temperature operating range</li>
         </ul>
 
         <p className="mt-3">
-          Batteries are installed in shaded, IP67-protected enclosures to extend lifespan.
+          Batteries are installed in shaded locations inside IP67 enclosures to reduce heat stress
+          and significantly extend battery lifespan.
         </p>
       </>
     )
@@ -97,33 +111,105 @@ const tabs = [
     content: (
       <>
         <p>
-          We provide <strong>IP67 certified battery boxes</strong> to protect batteries from rain,
-          dust, heat, and corrosion.
+          We supply <strong>IP67 certified battery boxes</strong> designed to protect batteries from
+          rain, dust, heat, corrosion, and environmental exposure.
         </p>
 
+        <h4 className="font-semibold mt-4">Battery Box Types</h4>
         <ul className="list-disc ml-6 mt-2 space-y-1">
-          <li>HDPE – lightweight & corrosion-free</li>
-          <li>MS powder-coated – strong & tamper-proof</li>
-          <li>SS (304/316) – ideal for coastal & industrial areas</li>
+          <li><strong>HDPE:</strong> Lightweight, UV resistant, corrosion-free</li>
+          <li><strong>MS Powder Coated:</strong> Strong, anti-rust, tamper-proof</li>
+          <li><strong>SS (304 / 316):</strong> Ideal for coastal & industrial environments</li>
         </ul>
       </>
     )
   },
 
   {
-    key: 'led',
-    title: 'LED Luminaire',
+    key: 'pcb',
+    title: 'PCB Board',
     content: (
       <>
         <p>
-          We supply LED luminaires using <strong>5050 & 3030 LED chips</strong> for solar street lighting.
+          We use high-quality <strong>aluminium PCB boards</strong> specifically designed for solar LED
+          street lighting applications to ensure excellent heat dissipation and electrical stability.
+        </p>
+
+        <h4 className="font-semibold mt-4">PCB Specifications</h4>
+        <ul className="list-disc ml-6 mt-2 space-y-1">
+          <li>Recommended thickness: <strong>1.6 mm – 2.0 mm</strong></li>
+          <li>Efficient heat dissipation</li>
+          <li>Prevents PCB bending or warping</li>
+          <li>Improves LED lifespan (50,000+ hours)</li>
+          <li>Stable performance in harsh outdoor conditions</li>
+        </ul>
+      </>
+    )
+  },
+
+  {
+    key: 'led-housing',
+    title: 'LED Housing & All-in-One Housing',
+    content: (
+      <>
+        <p>
+          We supply LED luminaires with <strong>die-cast aluminium housing</strong> designed for outdoor
+          solar street lighting applications. The housing ensures protection, heat dissipation, and
+          long service life.
         </p>
 
         <ul className="list-disc ml-6 mt-2 space-y-1">
-          <li>Up to 50,000 hours lifespan</li>
-          <li>High lumen output with low power consumption</li>
-          <li>Uniform light distribution</li>
-          <li>Weather-resistant housing</li>
+          <li>IP65 / IP66 weatherproof rating</li>
+          <li>Powder-coated, corrosion-resistant finish</li>
+          <li>Efficient heat dissipation design</li>
+          <li>UV resistant and fade-proof</li>
+        </ul>
+
+        <p className="mt-3">
+          For all-in-one solar street lights, we use <strong>high-strength MS housing</strong> with
+          powder coating, anti-theft design, and easy maintenance layout.
+        </p>
+      </>
+    )
+  },
+
+  {
+    key: 'lens',
+    title: 'Polycarbonate Lens',
+    content: (
+      <>
+        <p>
+          Polycarbonate lenses play a critical role in protecting LED modules and ensuring efficient
+          light distribution in solar street lights.
+        </p>
+
+        <ul className="list-disc ml-6 mt-2 space-y-1">
+          <li>High impact resistance and shatter-proof</li>
+          <li>90–95% light transmission</li>
+          <li>UV stabilized – prevents yellowing</li>
+          <li>Custom beam angles for road & pathway lighting</li>
+          <li>Long service life with minimal maintenance</li>
+        </ul>
+      </>
+    )
+  },
+
+  {
+    key: 'wiring',
+    title: 'Electrical Wiring & Fasteners',
+    content: (
+      <>
+        <p>
+          We use high-quality electrical wiring, cables, J-bolts, nuts, and fasteners to ensure safe,
+          stable, and long-lasting installations.
+        </p>
+
+        <ul className="list-disc ml-6 mt-2 space-y-1">
+          <li>Copper / aluminium cables with PVC / XLPE insulation</li>
+          <li>Weather & UV resistant wiring</li>
+          <li>Proper earthing and electrical safety compliance</li>
+          <li>Hot-dip galvanized J-bolts & fasteners</li>
+          <li>Strong foundation fixing for wind resistance</li>
         </ul>
       </>
     )
@@ -131,19 +217,21 @@ const tabs = [
 
   {
     key: 'installation',
-    title: 'Installation & AMC',
+    title: 'Installation, Commissioning & AMC',
     content: (
       <>
         <p>
-          We undertake complete <strong>installation, commissioning, and AMC services</strong>
-          for solar lighting projects.
+          We undertake complete <strong>installation, commissioning, and AMC services</strong> for
+          solar street lights, high mast lights, and solar CCTV systems.
         </p>
 
         <ul className="list-disc ml-6 mt-2 space-y-1">
-          <li>Site inspection & system planning</li>
-          <li>Professional installation & testing</li>
-          <li>Periodic maintenance & panel cleaning</li>
-          <li>Government O&M contracts</li>
+          <li>Site inspection and system planning</li>
+          <li>Panel mounting, alignment & wiring</li>
+          <li>Battery, controller & luminaire installation</li>
+          <li>System testing and commissioning</li>
+          <li>Periodic panel cleaning and maintenance</li>
+          <li>Government O&M contracts with dedicated staff</li>
         </ul>
       </>
     )
@@ -151,10 +239,10 @@ const tabs = [
 ]
 
 export default function Specialization() {
-  const [activeTab, setActiveTab] = useState(tabs[0].key)
+  const [activeTab, setActiveTab] = useState(sections[0].key)
   const [openAccordion, setOpenAccordion] = useState(null)
 
-  const activeContent = tabs.find(t => t.key === activeTab)
+  const activeContent = sections.find(s => s.key === activeTab)
 
   return (
     <div className="pt-24">
@@ -163,21 +251,21 @@ export default function Specialization() {
           Our Specialization
         </h1>
 
-        {/* ================= DESKTOP TABS ================= */}
+        {/* Desktop Tabs */}
         <div className="hidden md:block">
           <div className="flex gap-3 overflow-x-auto mb-8">
-            {tabs.map(tab => (
+            {sections.map(sec => (
               <button
-                key={tab.key}
-                onClick={() => setActiveTab(tab.key)}
+                key={sec.key}
+                onClick={() => setActiveTab(sec.key)}
                 className={`px-4 py-2 whitespace-nowrap rounded-full border transition
                   ${
-                    activeTab === tab.key
+                    activeTab === sec.key
                       ? 'bg-kyarrBlue text-white'
                       : 'bg-white text-gray-700 hover:bg-gray-100'
                   }`}
               >
-                {tab.title}
+                {sec.title}
               </button>
             ))}
           </div>
@@ -190,30 +278,29 @@ export default function Specialization() {
           </div>
         </div>
 
-        {/* ================= MOBILE ACCORDION ================= */}
+        {/* Mobile Accordion */}
         <div className="md:hidden space-y-4">
-          {tabs.map(tab => (
-            <div
-              key={tab.key}
-              className="border rounded-lg bg-white shadow"
-            >
+          {sections.map(sec => (
+            <div key={sec.key} className="border rounded-lg bg-white shadow">
               <button
                 onClick={() =>
-                  setOpenAccordion(
-                    openAccordion === tab.key ? null : tab.key
-                  )
+                  setOpenAccordion(openAccordion === sec.key ? null : sec.key)
                 }
                 className="w-full flex justify-between items-center px-4 py-3 font-semibold"
               >
-                {tab.title}
-                <span>{openAccordion === tab.key ? '−' : '+'}</span>
+                {sec.title}
+                <span>{openAccordion === sec.key ? '−' : '+'}</span>
               </button>
 
-              {openAccordion === tab.key && (
-                <div className="px-4 pb-4 text-gray-700 leading-7">
-                  {tab.content}
+              <div
+                className={`overflow-hidden transition-all duration-500
+                  ${openAccordion === sec.key ? 'max-h-[3000px] opacity-100' : 'max-h-0 opacity-0'}
+                `}
+              >
+                <div className="px-4 pb-4 leading-7 text-gray-700">
+                  {sec.content}
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
