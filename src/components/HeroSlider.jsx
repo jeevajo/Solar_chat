@@ -12,7 +12,8 @@ const slides = [
 { id: 7, image: '/images/product-hero-slider-7.jpeg', title: 'The Royal Power of a New Era', subtitle: 'Advanced solar technology for India' },
 
 { id: 8, image: '/images/product-hero-slider-8.jpeg', title: '13+ Years of Solar Excellence', subtitle: 'Trusted experience in government projects' },
-
+  
+{ id: 9, image: '/images/product-hero-slider-9.jpg', title: 'Trusted by Government Projects', subtitle: 'Proven execution & long-term reliability' },
 
 
 ]
