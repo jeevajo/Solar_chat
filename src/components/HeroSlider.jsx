@@ -7,13 +7,13 @@ const slides = [
   { id: 3, image: '/images/product-hero-slider-3.jpg', title: 'Robust Solar Panels', subtitle: 'High-efficiency panels for Indian roofs' },
   { id: 4, image: '/images/product-hero-slider-4.jpg', title: 'All-in-One Solutions', subtitle: 'Street lights, hybrid systems & installations' },
   { id: 5, image: '/images/product-hero-slider-5.jpg', title: '3 Year Warranty', subtitle: 'Reliable service & support' },
-  { id: 6, image: '/images/product-hero-slider-6.jpg', title: 'Powering a Brighter Future', subtitle: 'Reliable solar solutions since 2011' },
+  { id: 6, image: '/images/product-hero-slider-6.jpeg', title: 'Powering a Brighter Future', subtitle: 'Reliable solar solutions since 2011' },
 
 { id: 7, image: '/images/product-hero-slider-7.jpeg', title: 'The Royal Power of a New Era', subtitle: 'Advanced solar technology for India' },
 
 { id: 8, image: '/images/product-hero-slider-8.jpeg', title: '13+ Years of Solar Excellence', subtitle: 'Trusted experience in government projects' },
   
-{ id: 9, image: '/images/product-hero-slider-9.jpg', title: 'Trusted by Government Projects', subtitle: 'Proven execution & long-term reliability' },
+{ id: 9, image: '/images/product-hero-slider-9.jpeg', title: 'Trusted by Government Projects', subtitle: 'Proven execution & long-term reliability' },
 
 
 ]
