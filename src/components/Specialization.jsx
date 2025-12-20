@@ -257,12 +257,19 @@ export default function Specialization() {
   
   {/* Left Arrow */}
   <button
-    onClick={scrollLeft}
-    className="p-2 rounded-full border hover:bg-gray-100"
-    aria-label="Scroll left"
+  onClick={scrollLeft}
+  className="group p-2 rounded-full border bg-white hover:bg-gray-100 transition
+             disabled:opacity-40 disabled:cursor-not-allowed"
+  aria-label="Scroll left"
+>
+  <span
+    className="block transform transition-transform duration-300
+               group-hover:-translate-x-1"
   >
     ◀
-  </button>
+  </span>
+</button>
+
 
   {/* Tabs */}
   <div
@@ -287,12 +294,19 @@ export default function Specialization() {
 
   {/* Right Arrow */}
   <button
-    onClick={scrollRight}
-    className="p-2 rounded-full border hover:bg-gray-100"
-    aria-label="Scroll right"
+  onClick={scrollRight}
+  className="group p-2 rounded-full border bg-white hover:bg-gray-100 transition
+             disabled:opacity-40 disabled:cursor-not-allowed"
+  aria-label="Scroll right"
+>
+  <span
+    className="block transform transition-transform duration-300
+               group-hover:translate-x-1"
   >
     ▶
-  </button>
+  </span>
+</button>
+
 
 </div>
 
