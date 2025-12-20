@@ -7,6 +7,7 @@ import Products from './components/Products'
 import ProductDetail from './components/ProductDetail'
 import About from './components/About'
 import Contact from './components/Contact'
+import Specialization from './components/Specialization'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/specialization" element={<Specialization />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
