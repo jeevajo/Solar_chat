@@ -7,6 +7,52 @@ const slides = [
   { id: 3, image: '/images/product-hero-slider-3.jpg', title: 'Robust Solar Panels', subtitle: 'High-efficiency panels for Indian roofs' },
   { id: 4, image: '/images/product-hero-slider-4.jpg', title: 'All-in-One Solutions', subtitle: 'Street lights, hybrid systems & installations' },
   { id: 5, image: '/images/product-hero-slider-5.jpg', title: '3 Year Warranty', subtitle: 'Reliable service & support' },
+  { id: 6, image: '/images/product-hero-slider-6.jpg', title: 'Powering a Brighter Future', subtitle: 'Reliable solar solutions since 2011' },
+
+{ id: 7, image: '/images/product-hero-slider-7.jpg', title: 'The Royal Power of a New Era', subtitle: 'Advanced solar technology for India' },
+
+{ id: 8, image: '/images/product-hero-slider-8.jpg', title: '13+ Years of Solar Excellence', subtitle: 'Trusted experience in government projects' },
+
+{ id: 9, image: '/images/product-hero-slider-9.jpg', title: 'Trusted by Government Projects', subtitle: 'Proven execution & long-term reliability' },
+
+{ id: 10, image: '/images/product-hero-slider-10.jpg', title: '2500+ Solar Street Lights Installed', subtitle: 'Across roads, layouts, and communities' },
+
+{ id: 11, image: '/images/product-hero-slider-11.jpg', title: 'Advanced Solar Controller Technology', subtitle: 'Designed through continuous R&D' },
+
+{ id: 12, image: '/images/product-hero-slider-12.jpg', title: 'Built for Indian Conditions', subtitle: 'Performs reliably in heat and dust' },
+
+{ id: 13, image: '/images/product-hero-slider-13.jpg', title: 'Reliable Power Day & Night', subtitle: 'Optimized charging and backup' },
+
+{ id: 14, image: '/images/product-hero-slider-14.jpg', title: 'Engineered for Long Battery Life', subtitle: 'Smart dimming and power control' },
+
+{ id: 15, image: '/images/product-hero-slider-15.jpg', title: 'Smart Dimming. Longer Backup', subtitle: 'Up to 16–20 hours of operation' },
+
+{ id: 16, image: '/images/product-hero-slider-16.jpg', title: 'High Performance in Low Sunlight', subtitle: 'Maximum energy capture always' },
+
+{ id: 17, image: '/images/product-hero-slider-17.jpg', title: 'Safe Operation in Extreme Heat', subtitle: 'Handles high voltage securely' },
+
+{ id: 18, image: '/images/product-hero-slider-18.jpg', title: 'Designed for Roads & Highways', subtitle: 'Rugged lighting for public infrastructure' },
+
+{ id: 19, image: '/images/product-hero-slider-19.jpg', title: 'Solar Solutions for Smart Cities', subtitle: 'Efficient, scalable, and future-ready' },
+
+{ id: 20, image: '/images/product-hero-slider-20.jpg', title: 'End-to-End Installation & Maintenance', subtitle: 'From supply to long-term support' },
+
+{ id: 21, image: '/images/product-hero-slider-21.jpg', title: 'Low-Cost Service. High Reliability', subtitle: 'Optimized solutions that last longer' },
+
+{ id: 22, image: '/images/product-hero-slider-22.jpg', title: 'Compatible with All Solar Systems', subtitle: 'We service all brands and models' },
+
+{ id: 23, image: '/images/product-hero-slider-23.jpg', title: 'Custom Solutions for Every Project', subtitle: 'Tailored to wattage and site needs' },
+
+{ id: 24, image: '/images/product-hero-slider-24.jpg', title: 'Government Tender Specialists', subtitle: 'Experienced in public sector projects' },
+
+{ id: 25, image: '/images/product-hero-slider-25.jpg', title: 'Maintenance That Protects Performance', subtitle: 'Cleaning and monitoring throughout warranty' },
+
+{ id: 26, image: '/images/product-hero-slider-26.jpg', title: 'Sustainable Energy. Smart Investment', subtitle: 'Reduce cost. Improve reliability.' },
+
+{ id: 27, image: '/images/product-hero-slider-27.jpg', title: 'Lighting Communities with Solar Power', subtitle: 'Reliable illumination for public spaces' },
+
+{ id: 28, image: '/images/product-hero-slider-28.jpg', title: 'KYARR INCORP', subtitle: 'Power You Can Trust' },
+
 ]
 
 export default function HeroSlider(){
