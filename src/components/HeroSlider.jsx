@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
   { id: 1, image: '/images/product-hero-slider-1.jpg', title: 'KYARR INCORP', subtitle: 'The Royal Power Of A New Era' },
@@ -8,49 +9,95 @@ const slides = [
   { id: 4, image: '/images/product-hero-slider-4.jpg', title: 'All-in-One Solutions', subtitle: 'Street lights, hybrid systems & installations' },
   { id: 5, image: '/images/product-hero-slider-5.jpg', title: '3 Year Warranty', subtitle: 'Reliable service & support' },
   { id: 6, image: '/images/product-hero-slider-6.jpeg', title: 'Powering a Brighter Future', subtitle: 'Reliable solar solutions since 2011' },
-
-{ id: 7, image: '/images/product-hero-slider-7.jpeg', title: 'The Royal Power of a New Era', subtitle: 'Advanced solar technology for India' },
-
-{ id: 8, image: '/images/product-hero-slider-8.jpeg', title: '13+ Years of Solar Excellence', subtitle: 'Trusted experience in government projects' },
-  
-{ id: 9, image: '/images/product-hero-slider-9.jpeg', title: 'Trusted by Government Projects', subtitle: 'Proven execution & long-term reliability' },
-
-
+  { id: 7, image: '/images/product-hero-slider-7.jpeg', title: 'The Royal Power of a New Era', subtitle: 'Advanced solar technology for India' },
+  { id: 8, image: '/images/product-hero-slider-8.jpeg', title: '13+ Years of Solar Excellence', subtitle: 'Trusted experience in government projects' },
+  { id: 9, image: '/images/product-hero-slider-9.jpeg', title: 'Trusted by Government Projects', subtitle: 'Proven execution & long-term reliability' },
 ]
 
-export default function HeroSlider(){
+export default function HeroSlider() {
   const [index, setIndex] = useState(0)
+
+  // Auto slide
   useEffect(() => {
-    const id = setInterval(() => setIndex(i => (i + 1) % slides.length), 3500)
+    const id = setInterval(() => {
+      setIndex(i => (i + 1) % slides.length)
+    }, 3500)
+
     return () => clearInterval(id)
   }, [])
+
+  // Manual navigation
+  const nextSlide = () => {
+    setIndex(prev => (prev + 1) % slides.length)
+  }
+
+  const prevSlide = () => {
+    setIndex(prev => (prev === 0 ? slides.length - 1 : prev - 1))
+  }
 
   return (
     <div className="relative w-full overflow-hidden">
       <div className="h-[60vh] md:h-[75vh] w-full relative">
+
         {slides.map((s, i) => (
           <div
             key={s.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ${i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}
             aria-hidden={i !== index}
           >
-            <img src={s.image} alt={s.title} className="w-full h-full object-cover"/>
+            <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/30"></div>
 
             <div className="absolute left-4 md:left-12 top-1/4 md:top-1/3 text-white max-w-xl">
               <h2 className="text-3xl md:text-5xl font-extrabold">{s.title}</h2>
               <p className="mt-3 text-sm md:text-lg">{s.subtitle}</p>
+
               <div className="mt-6 flex gap-3">
-                <Link to="/products" className="px-4 py-2 bg-white text-kyarrBlue rounded shadow">Explore Products</Link>
+                <Link
+                  to="/products"
+                  className="px-4 py-2 bg-white text-kyarrBlue rounded shadow"
+                >
+                  Explore Products
+                </Link>
               </div>
             </div>
           </div>
         ))}
+
+        {/* ⬅️ LEFT ARROW */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 
+                     bg-black/40 hover:bg-black/70 text-white p-3 rounded-full transition"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={28} />
+        </button>
+
+        {/* ➡️ RIGHT ARROW */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 
+                     bg-black/40 hover:bg-black/70 text-white p-3 rounded-full transition"
+          aria-label="Next slide"
+        >
+          <ChevronRight size={28} />
+        </button>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-        {slides.map((s,i)=>(
-          <button key={s.id} onClick={()=>setIndex(i)} className={`w-3 h-3 rounded-full ${i===index ? 'bg-white' : 'bg-white/40'}`} aria-label={`Go to slide ${i+1}`}></button>
+      {/* Dots */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+        {slides.map((s, i) => (
+          <button
+            key={s.id}
+            onClick={() => setIndex(i)}
+            className={`w-3 h-3 rounded-full ${
+              i === index ? 'bg-white' : 'bg-white/40'
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          ></button>
         ))}
       </div>
     </div>
