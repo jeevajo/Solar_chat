@@ -13,13 +13,16 @@ export default function Home() {
           <h2 className="text-2xl font-bold">Featured Models</h2>
 
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             {/* Product 1 */}
-            <div className="bg-white p-4 rounded shadow">
-              <Link to="/products/kyarr-30w-33">
+            <div className="bg-white p-4 rounded shadow transition hover:shadow-xl">
+              <Link
+                to="/products/kyarr-30w-33"
+                className="group block overflow-hidden rounded"
+              >
                 <img
                   src="/images/product-1.png"
-                  className="h-40 w-full object-cover rounded cursor-pointer hover:opacity-90 transition"
+                  className="h-40 w-full object-cover transition duration-300 group-hover:scale-105 group-hover:brightness-110"
                   alt="KYARR 30W Solar Street Light"
                 />
               </Link>
@@ -30,11 +33,14 @@ export default function Home() {
             </div>
 
             {/* Product 2 */}
-            <div className="bg-white p-4 rounded shadow">
-              <Link to="/products/kyarr-80w-33">
+            <div className="bg-white p-4 rounded shadow transition hover:shadow-xl">
+              <Link
+                to="/products/kyarr-80w-33"
+                className="group block overflow-hidden rounded"
+              >
                 <img
                   src="/images/product-4.png"
-                  className="h-40 w-full object-cover rounded cursor-pointer hover:opacity-90 transition"
+                  className="h-40 w-full object-cover transition duration-300 group-hover:scale-105 group-hover:brightness-110"
                   alt="KYARR 80W Solar Street Light"
                 />
               </Link>
@@ -45,11 +51,14 @@ export default function Home() {
             </div>
 
             {/* Product 3 */}
-            <div className="bg-white p-4 rounded shadow">
-              <Link to="/products/kyarr-100w-aio">
+            <div className="bg-white p-4 rounded shadow transition hover:shadow-xl">
+              <Link
+                to="/products/kyarr-100w-aio"
+                className="group block overflow-hidden rounded"
+              >
                 <img
                   src="/images/product-11.png"
-                  className="h-40 w-full object-cover rounded cursor-pointer hover:opacity-90 transition"
+                  className="h-40 w-full object-cover transition duration-300 group-hover:scale-105 group-hover:brightness-110"
                   alt="KYARR 100W All-in-One"
                 />
               </Link>
