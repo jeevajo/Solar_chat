@@ -16,7 +16,7 @@ export default function Home() {
             
             {/* Product 1 */}
             <div className="bg-white p-4 rounded shadow">
-              <Link to="/products/1">
+              <Link to="/products/kyarr-30w-33">
                 <img
                   src="/images/product-1.png"
                   className="h-40 w-full object-cover rounded cursor-pointer hover:opacity-90 transition"
@@ -31,7 +31,7 @@ export default function Home() {
 
             {/* Product 2 */}
             <div className="bg-white p-4 rounded shadow">
-              <Link to="/products/4">
+              <Link to="/products/kyarr-80w-33">
                 <img
                   src="/images/product-4.png"
                   className="h-40 w-full object-cover rounded cursor-pointer hover:opacity-90 transition"
@@ -46,7 +46,7 @@ export default function Home() {
 
             {/* Product 3 */}
             <div className="bg-white p-4 rounded shadow">
-              <Link to="/products/11">
+              <Link to="/products/kyarr-100w-aio">
                 <img
                   src="/images/product-11.png"
                   className="h-40 w-full object-cover rounded cursor-pointer hover:opacity-90 transition"
