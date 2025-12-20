@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
   { id: 1, image: '/images/product-hero-slider-1.jpg', title: 'KYARR INCORP', subtitle: 'The Royal Power Of A New Era' },
@@ -16,17 +15,20 @@ const slides = [
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
+  const intervalRef = useRef(null)
 
-  // Auto slide
+  // Auto slide (pause on hover)
   useEffect(() => {
-    const id = setInterval(() => {
-      setIndex(i => (i + 1) % slides.length)
-    }, 3500)
+    if (!isHovered) {
+      intervalRef.current = setInterval(() => {
+        setIndex(i => (i + 1) % slides.length)
+      }, 3500)
+    }
 
-    return () => clearInterval(id)
-  }, [])
+    return () => clearInterval(intervalRef.current)
+  }, [isHovered])
 
-  // Manual navigation
   const nextSlide = () => {
     setIndex(prev => (prev + 1) % slides.length)
   }
@@ -36,67 +38,74 @@ export default function HeroSlider() {
   }
 
   return (
-    <div className="relative w-full overflow-hidden">
-      <div className="h-[60vh] md:h-[75vh] w-full relative">
+    <div
+      className="relative w-full overflow-hidden group"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="h-[60vh] md:h-[75vh] w-full overflow-hidden relative">
 
-        {slides.map((s, i) => (
-          <div
-            key={s.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
-            }`}
-            aria-hidden={i !== index}
-          >
-            <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/30"></div>
+        {/* SLIDES CONTAINER */}
+        <div
+          className="flex h-full transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${index * 100}%)` }}
+        >
+          {slides.map(s => (
+            <div key={s.id} className="min-w-full h-full relative">
+              <img
+                src={s.image}
+                alt={s.title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/30"></div>
 
-            <div className="absolute left-4 md:left-12 top-1/4 md:top-1/3 text-white max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-extrabold">{s.title}</h2>
-              <p className="mt-3 text-sm md:text-lg">{s.subtitle}</p>
+              <div className="absolute left-4 md:left-12 top-1/4 md:top-1/3 text-white max-w-xl">
+                <h2 className="text-3xl md:text-5xl font-extrabold">{s.title}</h2>
+                <p className="mt-3 text-sm md:text-lg">{s.subtitle}</p>
 
-              <div className="mt-6 flex gap-3">
-                <Link
-                  to="/products"
-                  className="px-4 py-2 bg-white text-kyarrBlue rounded shadow"
-                >
-                  Explore Products
-                </Link>
+                <div className="mt-6 flex gap-3">
+                  <Link
+                    to="/products"
+                    className="px-4 py-2 bg-white text-kyarrBlue rounded shadow"
+                  >
+                    Explore Products
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
         {/* ⬅️ LEFT ARROW */}
         <button
           onClick={prevSlide}
           className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 
-                     bg-black/40 hover:bg-black/70 text-white p-3 rounded-full transition"
-          aria-label="Previous slide"
+                     bg-black/50 hover:bg-black/80 text-white p-3 rounded-full
+                     opacity-0 group-hover:opacity-100 transition"
         >
-          <ChevronLeft size={28} />
+          ‹
         </button>
 
         {/* ➡️ RIGHT ARROW */}
         <button
           onClick={nextSlide}
           className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 
-                     bg-black/40 hover:bg-black/70 text-white p-3 rounded-full transition"
-          aria-label="Next slide"
+                     bg-black/50 hover:bg-black/80 text-white p-3 rounded-full
+                     opacity-0 group-hover:opacity-100 transition"
         >
-          <ChevronRight size={28} />
+          ›
         </button>
       </div>
 
-      {/* Dots */}
+      {/* DOTS */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-        {slides.map((s, i) => (
+        {slides.map((_, i) => (
           <button
-            key={s.id}
+            key={i}
             onClick={() => setIndex(i)}
             className={`w-3 h-3 rounded-full ${
               i === index ? 'bg-white' : 'bg-white/40'
             }`}
-            aria-label={`Go to slide ${i + 1}`}
           ></button>
         ))}
       </div>
