@@ -89,6 +89,38 @@ const sections = [
         <p>
           This results in 20–30% higher energy output compared to PWM controllers.
         </p>
+        <h3 className="font-semibold mt-4">Key Features of MPPT</h3>
+
+<ul className="list-disc ml-6 space-y-2">
+  <li>
+    <strong>Higher Energy Harvesting Efficiency</strong><br />
+    Maximizes power generation even in low-light or cloudy conditions
+  </li>
+
+  <li>
+    <strong>Fast and Efficient Battery Charging</strong><br />
+    Improves charging speed and extends battery life
+  </li>
+
+  <li>
+    <strong>Wide Voltage Compatibility</strong><br />
+    Suitable for 12V / 24V / 36V / 48V solar systems
+  </li>
+
+  <li>
+    <strong>Reduced Power Loss</strong><br />
+    High conversion efficiency with minimal energy wastage
+  </li>
+</ul>
+
+<h3 className="font-semibold mt-4">Advanced Protection Functions</h3>
+<ul className="list-disc ml-6">
+  <li>Overcharge protection</li>
+  <li>Over-discharge protection</li>
+  <li>Short-circuit protection</li>
+  <li>Reverse polarity protection</li>
+</ul>
+
 
         <h3 className="font-semibold mt-4">Our Assurance :</h3>
         <p>
