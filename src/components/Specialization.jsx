@@ -8,7 +8,7 @@ const sections = [
       '/images/specialization/solar-panels/1.jpg',
       '/images/specialization/solar-panels/2.jpg'
     ],
-    content: (a
+    content: (
       <>
         <h3 className="font-semibold">Explanation :</h3>
         <p>
