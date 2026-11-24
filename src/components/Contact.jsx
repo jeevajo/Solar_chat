@@ -1,14 +1,2 @@
-export default function Contact() {
-  return (
-    <div className="pt-28 px-6 md:px-20 pb-20">
-      <h1 className="text-4xl font-bold text-kyarrBlue">Contact Us</h1>
-
-      <div className="mt-8 space-y-4 text-lg text-gray-700">
-        <p><b>📞 Phone:</b> <a href="tel:+919944261439" className="text-kyarrBlue">+91 9944261439</a></p>
-        <p><b>💬 WhatsApp:</b> <a href="https://wa.me/919944261439" className="text-kyarrBlue">+91 9944261439</a></p>
-        <p><b>📧 Email:</b> <a href="mailto:orcqind@gmail.com" className="text-kyarrBlue">kyarrincorp@gmail.com</a></p>
-        <p><b>📍 Location:</b>  236, Rathna Nagar, Bharma Colony, Dindigul</p>
-      </div>
-    </div>
-  );
-}
+import { Link } from 'react-router-dom'
+export default function Contact(){return <div className="page-wrap"><section className="page-hero"><div className="page-hero-inner"><p className="eyebrow">Get in touch</p><h1>Let's talk about<br/><em>your next project.</em></h1><p>Reach KYARR INCORP for product enquiries, project discussions and service support.</p></div></section><section className="content-section contact-layout"><div><p className="eyebrow">Contact information</p><h2 className="section-title">We'd be glad to hear from you.</h2><p className="body-copy">Connect with our team directly using the details below. For a faster response, you can also send us a WhatsApp message.</p><div className="contact-cards"><a className="contact-card" href="tel:+919944261439"><span>PHONE</span><strong>+91 99442 61439</strong><small>Call our team</small></a><a className="contact-card" href="https://wa.me/919944261439" target="_blank" rel="noreferrer"><span>WHATSAPP</span><strong>Chat with KYARR</strong><small>Send an enquiry</small></a><a className="contact-card" href="mailto:kyarrlights@gmail.com"><span>EMAIL</span><strong>kyarrlights@gmail.com</strong><small>Write to us</small></a><div className="contact-card"><span>LOCATION</span><strong>Dindigul, Tamil Nadu</strong><small>India</small></div></div></div><aside className="contact-aside"><div className="contact-aside-mark">K</div><p className="eyebrow">KYARR INCORP</p><h3>The Royal Power Of A New Era</h3><p>Solar lighting and connected technology for brighter communities.</p><Link to="/products" className="gold-button">Explore products ↗</Link></aside></section></div>}
