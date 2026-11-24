@@ -7,7 +7,7 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: #fff; color: #172b45; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 ::selection { background: rgba(11,110,246,.18); }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 50; background: rgba(255,255,255,.94); border-bottom: 1px solid rgba(226,232,240,.8); backdrop-filter: blur(18px); }
-.home-hero { background: #071d36 url('/images/product-hero-slider-1.jpg') center/cover no-repeat; }
+.home-hero { background: #071d36 url('/images/product-hero-slider-9.jpeg') center/cover no-repeat; }
 .section-shell { background: radial-gradient(circle at 10% 10%, rgba(219,234,254,.45), transparent 35%), #fff; }
 .eyebrow { color: #0b6ef6; font-size: .7rem; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
 .section-title { margin-top: .75rem; color: #0a2540; font-size: clamp(2rem,4vw,3rem); font-weight: 900; letter-spacing: -.045em; line-height: 1.08; }
