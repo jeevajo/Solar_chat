@@ -41,6 +41,10 @@ export default function Navbar() {
             Specialization
           </NavLink>
 
+          <NavLink to="/smartgrid" className={navClass}>
+            SmartGrid
+          </NavLink>
+
           <NavLink to="/about" className={navClass}>
             About
           </NavLink>
