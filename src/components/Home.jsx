@@ -35,8 +35,10 @@ export default function Home() {
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-xl">
-            <div className="absolute -inset-5 rounded-[2rem] bg-blue-400/20 blur-3xl" />
-            <img src="/images/product-hero.png" alt="KYARR solar lighting solution" className="relative max-h-[440px] w-full rounded-[2rem] object-contain drop-shadow-2xl" />
+            <div className="absolute -inset-5 rounded-[2rem] bg-cyan-300/20 blur-3xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/30 bg-white p-2 shadow-2xl">
+              <img src="/images/smartgrid-brochure-1.jpg" alt="KYARR smart solar streetlights connected through wireless communication" className="max-h-[440px] w-full rounded-[1.5rem] object-contain" />
+            </div>
             <div className="absolute -bottom-5 left-4 rounded-2xl border border-white/60 bg-white/95 p-4 shadow-2xl sm:left-0"><div className="text-xs font-bold uppercase tracking-widest text-kyarrBlue">KYARR INCORP</div><div className="mt-1 text-sm font-extrabold text-kyarrDark">The Royal Power Of A New Era</div></div>
           </div>
         </div>
