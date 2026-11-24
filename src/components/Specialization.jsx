@@ -889,11 +889,12 @@ export default function Specialization() {
   const active = sections.find(s => s.key === activeKey)
 
   return (
-    <div className="pt-24">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-center mb-8">
+    <main className="min-h-screen bg-slate-50 pt-24">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:px-10 md:py-16">
+        <h1 className="mb-4 text-center text-3xl font-extrabold tracking-tight text-[#0a2540] md:text-5xl">
           Solar Street Light Specialization – KYARR INCORP
         </h1>
+        <p className="mx-auto mb-10 max-w-3xl text-center leading-7 text-slate-600">Explore our solar lighting components, technical specifications, installation practices and service capabilities.</p>
 
         <div className="hidden md:flex items-center gap-3 mb-6 group">
           <button
@@ -913,7 +914,7 @@ export default function Specialization() {
               <button
                 key={s.key}
                 onClick={() => setActiveKey(s.key)}
-                className={`px-4 py-2 whitespace-nowrap rounded-full border transition ${activeKey === s.key ? 'bg-kyarrBlue text-white' : 'bg-white hover:bg-gray-100'}`}
+                className={`rounded-full border px-5 py-3 text-sm font-semibold whitespace-nowrap shadow-sm transition-all ${activeKey === s.key ? 'border-[#0a2540] bg-[#0a2540] text-white shadow-md' : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50'}`}
               >
                 {s.title}
               </button>
@@ -929,18 +930,19 @@ export default function Specialization() {
           </button>
         </div>
 
-        <div className="bg-white rounded-xl shadow p-6 leading-7 text-gray-700">
-          <h2 className="text-2xl font-semibold mb-4">{active.title}</h2>
+        <section className="rounded-3xl border border-slate-200 bg-white p-6 leading-7 text-slate-700 shadow-sm md:p-10">
+          <h2 className="mb-6 text-2xl font-bold text-[#0a2540] md:text-3xl">{active.title}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {active.images.map((img, i) => (
-              <img key={i} src={img} alt={active.title} className="w-full h-60 object-cover rounded" />
+              <img key={i} src={img} alt={active.title} className="h-64 w-full rounded-2xl object-cover shadow-sm" />
             ))}
           </div>
 
           {active.content}
         </div>
+        </section>
       </div>
-    </div>
+    </main>
   )
 }
