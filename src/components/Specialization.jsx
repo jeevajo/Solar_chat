@@ -940,7 +940,6 @@ export default function Specialization() {
           </div>
 
           {active.content}
-        </div>
         </section>
       </div>
     </main>
