@@ -188,6 +188,21 @@ export default function SmartGrid() {
         </div>
       </section>
 
+      {/* Brochure visual: connected streetlight network */}
+      <section className="bg-slate-950 px-6 py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-cyan-300">Connected streetlight network</p>
+            <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">One network. Multiple lights. Smarter control.</h2>
+            <p className="mx-auto mt-4 max-w-3xl leading-7 text-slate-300">See how a Wi-Fi modem can connect solar streetlights across a road-side installation.</p>
+          </div>
+          <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white p-2 shadow-2xl">
+            <img src="/images/smartgrid-brochure-1.jpg" alt="KYARR brochure illustration showing a Wi-Fi modem connecting multiple solar streetlights wirelessly" className="h-auto w-full rounded-xl" loading="lazy" />
+          </figure>
+          <p className="mt-3 text-center text-xs text-slate-400">Illustration from the KYARR product brochure.</p>
+        </div>
+      </section>
+
       {/* Intro */}
       <section className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[.8fr_1.2fr] md:items-center">
@@ -237,6 +252,21 @@ export default function SmartGrid() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Brochure product showcase */}
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading
+            eyebrow="Featured hardware"
+            title="Smart communication and intelligent charging"
+            description="Explore the router and Wi-Fi MPPT controller featured in the KYARR brochure."
+          />
+          <figure className="mt-12 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+            <img src="/images/smartgrid-brochure-2.jpg" alt="KYARR brochure featuring the Smart Solar Communication Router and Smart Wi-Fi MPPT Solar Charge Controller with key features" className="h-auto w-full" loading="lazy" />
+          </figure>
+          <p className="mt-4 text-center text-xs text-slate-500">Product specifications and supported features may vary by model and installation.</p>
         </div>
       </section>
 
