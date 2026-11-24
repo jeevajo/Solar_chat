@@ -11,3 +11,12 @@
 .site-footer{margin-top:0}
 @media(max-width:850px){.nav-inner{min-height:70px;padding:10px 18px}.desktop-nav{display:none}.menu-toggle{display:block}.mobile-nav{display:flex;flex-direction:column;gap:6px;padding:12px 20px 20px;border-top:1px solid var(--line);background:#fff}.mobile-nav .nav-link{padding:12px}.mobile-nav .nav-cta{margin:6px 0 0;text-align:center}.split-layout,.contact-layout,.detail-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.detail-image{min-height:350px}.detail-image img{height:290px}}
 @media(max-width:600px){.brand img{width:48px;height:44px}.brand b{font-size:14px}.brand small{font-size:8px}.page-hero-inner{padding:65px 22px 70px}.content-section{padding:55px 22px}.fact-grid,.strength-grid,.contact-cards{grid-template-columns:1fr}.fact-card{padding:20px}.dark-cta{align-items:flex-start;flex-direction:column;padding:28px}.footer-main{grid-template-columns:1fr;gap:35px;padding:45px 22px}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;padding:18px 22px}.spec-list div{font-size:12px}.detail-image{min-height:290px}.detail-image img{height:240px}.home-hero{background-position:62% center}.smart-cta{border-radius:22px}}
+
+/* Header brand balance: enlarge the KYARR logo to match the wordmark */
+.nav-inner{min-height:100px;padding-top:14px;padding-bottom:14px}
+.brand{gap:18px}
+.brand img{width:128px;height:76px;object-fit:contain}
+.brand b{font-size:21px}
+.brand small{font-size:12px;letter-spacing:.16em}
+@media(max-width:850px){.nav-inner{min-height:88px}.brand img{width:112px;height:68px}.brand b{font-size:19px}.brand small{font-size:10px}}
+@media(max-width:600px){.nav-inner{min-height:76px}.brand{gap:10px}.brand img{width:88px;height:58px}.brand b{font-size:15px}.brand small{font-size:8px;letter-spacing:.1em}}
