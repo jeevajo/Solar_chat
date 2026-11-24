@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* minimal global tweaks */
-body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-:root { --kyarr-blue: #0b6ef6; --kyarr-dark: #0a2540; }
+:root { --kyarr-blue: #0b6ef6; --kyarr-dark: #0a2540; --kyarr-gold: #d9b44a; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #172b45; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+::selection { background: rgba(11,110,246,.18); }
+.site-header { position: fixed; inset: 0 0 auto; z-index: 50; background: rgba(255,255,255,.94); border-bottom: 1px solid rgba(226,232,240,.8); backdrop-filter: blur(18px); }
+.home-hero { background: #071d36 url('/images/product-hero-slider-1.jpg') center/cover no-repeat; }
+.section-shell { background: radial-gradient(circle at 10% 10%, rgba(219,234,254,.45), transparent 35%), #fff; }
+.eyebrow { color: #0b6ef6; font-size: .7rem; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
+.section-title { margin-top: .75rem; color: #0a2540; font-size: clamp(2rem,4vw,3rem); font-weight: 900; letter-spacing: -.045em; line-height: 1.08; }
+.feature-panel { border: 1px solid #e8eef6; border-radius: 1.4rem; background: white; padding: 2rem; box-shadow: 0 12px 35px rgba(10,37,64,.045); transition: transform .25s ease, box-shadow .25s ease; }
+.feature-panel:hover { transform: translateY(-5px); box-shadow: 0 20px 45px rgba(10,37,64,.1); }
+.product-card { overflow: hidden; border: 1px solid #e7edf5; border-radius: 1.4rem; background: white; box-shadow: 0 10px 30px rgba(10,37,64,.045); transition: transform .25s ease, box-shadow .25s ease; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 22px 45px rgba(10,37,64,.11); }
+.product-image-wrap { position: relative; display: block; overflow: hidden; background: linear-gradient(145deg,#f8fbff,#edf4fb); }
+.smart-cta { display: flex; align-items: center; justify-content: space-between; gap: 2rem; overflow: hidden; border-radius: 2rem; padding: clamp(2rem,5vw,4rem); background: radial-gradient(circle at 90% 10%,rgba(11,110,246,.4),transparent 35%), linear-gradient(120deg,#071d36,#0a2540 65%,#123e69); box-shadow: 0 25px 60px rgba(10,37,64,.16); }
+.site-footer { margin-top: 2rem; background: #061a30; }
+@media (max-width: 640px) { .home-hero { background-position: 62% center; } .smart-cta { border-radius: 1.4rem; } }
