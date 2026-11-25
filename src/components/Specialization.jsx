@@ -58,8 +58,8 @@ const sections = [
     key: 'controller',
     title: 'Solar Charge Controller (Advanced Technology)',
     images: [
-      '/images/specialization/controller-mppt/1.jpg',
-      '/images/specialization/controller-mppt/2.jpg'
+      '/images/2controller1.PNG',
+      '/images/2controller2.PNG'
     ],
     content: (
       <>
@@ -134,8 +134,8 @@ const sections = [
   key: 'battery',
   title: 'Battery System (LiFePO4)',
   images: [
-    '/images/specialization/battery-lifepo4/1.jpg',
-    '/images/specialization/battery-lifepo4/2.jpg'
+    '/images/3Battery1.PNG',
+    '/images/3Battery2.PNG'
   ],
   content: (
     <>
@@ -241,9 +241,8 @@ const sections = [
   key: 'battery-box',
   title: 'Battery Box (IP67 Certified)',
   images: [
-    '/images/specialization/battery-box/hdpe.jpg',
-    '/images/specialization/battery-box/ms.jpg',
-    '/images/specialization/battery-box/ss.jpg'
+    '/images/4Battery1.PNG',
+    '/images/4Battery2.PNG'
   ],
   content: (
     <>
@@ -314,8 +313,8 @@ const sections = [
   key: 'led-luminaire',
   title: 'LED Luminaire (Solar Street Light)',
   images: [
-    '/images/specialization/led-luminaire/1.jpg',
-    '/images/specialization/led-luminaire/2.jpg'
+    '/images/5LEDL1.PNG',
+    '/images/5LEDL2.PNG'
   ],
   content: (
     <>
@@ -389,8 +388,8 @@ const sections = [
   key: 'pcb-board',
   title: 'PCB Board',
   images: [
-    '/images/specialization/pcb-board/1.jpg',
-    '/images/specialization/pcb-board/2.jpg'
+    '/images/6PCBB1.PNG',
+    '/images/6PCBB2.PNG'
   ],
   content: (
     <>
@@ -461,8 +460,8 @@ const sections = [
   key: 'pole-mounting',
   title: 'Pole & Mounting Structure (Galvanized – Arm Type)',
   images: [
-    '/images/specialization/poles/round.jpg',
-    '/images/specialization/poles/octagonal.jpg'
+    '/images/7pole1.PNG',
+    '/images/7pole2.PNG'
   ],
   content: (
     <>
@@ -513,8 +512,8 @@ const sections = [
   key: 'led-housing',
   title: 'LED Housing',
   images: [
-    '/images/specialization/led-housing/1.jpg',
-    '/images/specialization/led-housing/2.jpg'
+    '/images/8led1.PNG',
+    '/images/8led2.PNG'
   ],
   content: (
     <>
@@ -565,8 +564,8 @@ const sections = [
   key: 'all-in-one-housing',
   title: 'All In One Solar Panel Housing',
   images: [
-    '/images/specialization/all-in-one-housing/1.jpg',
-    '/images/specialization/all-in-one-housing/2.jpg'
+    '/images/9housing1.PNG',
+    '/images/9housing2.PNG'
   ],
   content: (
     <>
@@ -631,8 +630,8 @@ const sections = [
   key: 'polycarbonate-lens',
   title: 'Polycarbonate Lens',
   images: [
-    '/images/specialization/polycarbonate-lens/1.jpg',
-    '/images/specialization/polycarbonate-lens/2.jpg'
+    '/images/10lens1.PNG',
+    '/images/10lens2.PNG'
   ],
   content: (
     <>
@@ -686,8 +685,8 @@ const sections = [
   key: 'wiring-cables',
   title: 'Electrical Wiring & Cables',
   images: [
-    '/images/specialization/wiring/1.jpg',
-    '/images/specialization/wiring/2.jpg'
+    '/images/11wiring1.PNG',
+    '/images/11wiring2.PNG'
   ],
   content: (
     <>
@@ -740,8 +739,8 @@ const sections = [
   key: 'jbolts-fasteners',
   title: 'J-Bolts, Nuts & Fasteners',
   images: [
-    '/images/specialization/jbolts/1.jpg',
-    '/images/specialization/jbolts/2.jpg'
+    '/images/12nuts1.PNG',
+    '/images/12nuts2.PNG'
   ],
   content: (
     <>
@@ -786,8 +785,8 @@ const sections = [
   key: 'installation-commissioning',
   title: 'Installation & Commissioning',
   images: [
-    '/images/specialization/installation/1.jpg',
-    '/images/specialization/installation/2.jpg'
+    '/images/13installation1.PNG',
+    '/images/13installation2.PNG'
   ],
   content: (
     <>
@@ -826,8 +825,8 @@ const sections = [
   key: 'amc',
   title: 'AMC – Annual Maintenance Contract',
   images: [
-    '/images/specialization/amc/1.jpg',
-    '/images/specialization/amc/2.jpg'
+    '/images/14AMC1.PNG',
+    '/images/14AMC2.PNG'
   ],
   content: (
     <>
