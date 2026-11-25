@@ -5,8 +5,8 @@ const sections = [
     key: 'solar-panels',
     title: 'Solar Panels',
     images: [
-      '/images/specialization/solar-panels/1solar1.png',
-      '/images/specialization/solar-panels/1solar2.png'
+      '/images/1solar1.png',
+      '/images/1solar2.png'
     ],
     content: (
       <>
