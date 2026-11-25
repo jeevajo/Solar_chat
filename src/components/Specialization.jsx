@@ -58,8 +58,8 @@ const sections = [
     key: 'controller',
     title: 'Solar Charge Controller (Advanced Technology)',
     images: [
-      '/images/2controller1.PNG',
-      '/images/2controller2.PNG'
+      '/images/2controller1.png',
+      '/images/2controller2.png'
     ],
     content: (
       <>
@@ -134,8 +134,8 @@ const sections = [
   key: 'battery',
   title: 'Battery System (LiFePO4)',
   images: [
-    '/images/3Battery1.PNG',
-    '/images/3Battery2.PNG'
+    '/images/3Battery1.png',
+    '/images/3Battery2.png'
   ],
   content: (
     <>
@@ -241,8 +241,8 @@ const sections = [
   key: 'battery-box',
   title: 'Battery Box (IP67 Certified)',
   images: [
-    '/images/4Battery1.PNG',
-    '/images/4Battery2.PNG'
+    '/images/4Battery1.png',
+    '/images/4Battery2.png'
   ],
   content: (
     <>
@@ -313,8 +313,8 @@ const sections = [
   key: 'led-luminaire',
   title: 'LED Luminaire (Solar Street Light)',
   images: [
-    '/images/5LEDL1.PNG',
-    '/images/5LEDL2.PNG'
+    '/images/5LEDL1.png',
+    '/images/5LEDL2.png'
   ],
   content: (
     <>
@@ -388,8 +388,8 @@ const sections = [
   key: 'pcb-board',
   title: 'PCB Board',
   images: [
-    '/images/6PCBB1.PNG',
-    '/images/6PCBB2.PNG'
+    '/images/6PCBB1.png',
+    '/images/6PCBB2.png'
   ],
   content: (
     <>
@@ -460,8 +460,8 @@ const sections = [
   key: 'pole-mounting',
   title: 'Pole & Mounting Structure (Galvanized – Arm Type)',
   images: [
-    '/images/7pole1.PNG',
-    '/images/7pole2.PNG'
+    '/images/7pole1.png',
+    '/images/7pole2.png'
   ],
   content: (
     <>
@@ -512,8 +512,8 @@ const sections = [
   key: 'led-housing',
   title: 'LED Housing',
   images: [
-    '/images/8led1.PNG',
-    '/images/8led2.PNG'
+    '/images/8led1.png',
+    '/images/8led2.png'
   ],
   content: (
     <>
@@ -564,8 +564,8 @@ const sections = [
   key: 'all-in-one-housing',
   title: 'All In One Solar Panel Housing',
   images: [
-    '/images/9housing1.PNG',
-    '/images/9housing2.PNG'
+    '/images/9housing1.png',
+    '/images/9housing2.png'
   ],
   content: (
     <>
@@ -630,8 +630,8 @@ const sections = [
   key: 'polycarbonate-lens',
   title: 'Polycarbonate Lens',
   images: [
-    '/images/10lens1.PNG',
-    '/images/10lens2.PNG'
+    '/images/10lens1.png',
+    '/images/10lens2.png'
   ],
   content: (
     <>
@@ -685,8 +685,8 @@ const sections = [
   key: 'wiring-cables',
   title: 'Electrical Wiring & Cables',
   images: [
-    '/images/11wiring1.PNG',
-    '/images/11wiring2.PNG'
+    '/images/11wiring1.png',
+    '/images/11wiring2.png'
   ],
   content: (
     <>
@@ -739,8 +739,8 @@ const sections = [
   key: 'jbolts-fasteners',
   title: 'J-Bolts, Nuts & Fasteners',
   images: [
-    '/images/12nuts1.PNG',
-    '/images/12nuts2.PNG'
+    '/images/12nuts1.png',
+    '/images/12nuts2.png'
   ],
   content: (
     <>
@@ -785,8 +785,8 @@ const sections = [
   key: 'installation-commissioning',
   title: 'Installation & Commissioning',
   images: [
-    '/images/13installation1.PNG',
-    '/images/13installation2.PNG'
+    '/images/13installation1.png',
+    '/images/13installation2.png'
   ],
   content: (
     <>
@@ -825,8 +825,8 @@ const sections = [
   key: 'amc',
   title: 'AMC – Annual Maintenance Contract',
   images: [
-    '/images/14AMC1.PNG',
-    '/images/14AMC2.PNG'
+    '/images/14AMC1.png',
+    '/images/14AMC2.png'
   ],
   content: (
     <>
